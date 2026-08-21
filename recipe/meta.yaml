@@ -1,5 +1,5 @@
 {% set name = "distmetrics" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 {% set python_min = "3.12" %} 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/fa/c8/66bf868f613dc81c45ecef411a037a62e1659068e8a5c1c0999c783df6c2/distmetrics-{{ version }}.tar.gz
-  sha256: 2c190697bfa17d3608ec68ae3699bc5173858a4c6ca01e0f8484499d4055bed2
+  url: https://files.pythonhosted.org/packages/15/0a/26ddc951d6f594ad1581cfe7ca66a46fb0cb9796000c2e25b644df0aaa56/distmetrics-{{ version }}.tar.gz
+  sha256: 7b8f95ccd779449dca059bc98c6a486a2c8f81dc93ded7c7851cb3e6b4d2d741
 
 build:
   noarch: python
