@@ -13,10 +13,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24627&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/distmetrics-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/distmetrics-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/distmetrics-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -39,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `distmetrics` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install distmetrics
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install distmetrics
 ```
 
-It is possible to list all of the versions of `distmetrics` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add distmetrics
+# for installing globally
+pixi global install distmetrics
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `distmetrics` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search distmetrics --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search distmetrics --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search distmetrics --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -75,6 +118,8 @@ mamba repoquery whoneeds distmetrics --channel conda-forge
 # List dependencies of `distmetrics`:
 mamba repoquery depends distmetrics --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
