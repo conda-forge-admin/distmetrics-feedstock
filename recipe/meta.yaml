@@ -26,13 +26,13 @@ requirements:
     - affine
     - rasterio
     - numpy
+    - dem_stitcher
     - scikit-image
     - matplotlib-base
     - scipy
     - pydantic
     - astropy-base
     - einops
-    - compilers
     - backoff
     - asf_search
     - shapely
