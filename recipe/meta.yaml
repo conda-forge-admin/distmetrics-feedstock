@@ -33,7 +33,7 @@ requirements:
     - pydantic
     - astropy-base
     - einops
-    - backoff
+    - tenacity
     - asf_search
     - shapely
     - geopandas
